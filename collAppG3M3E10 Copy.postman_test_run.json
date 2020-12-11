@@ -1,0 +1,150 @@
+{
+	"id": "c87f22aa-eda7-48c5-96f1-de482b4e7b50",
+	"name": "collAppG3M3E10 Copy",
+	"timestamp": "2020-12-11T05:48:43.032Z",
+	"collection_id": "e61f4f4c-3597-41b5-a110-034241765468",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 0,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "ad491a3d-08d7-48bf-bb60-f76fc480ba1f",
+			"name": "Met_POST",
+			"url": "https://cajero-apig3m3e10.herokuapp.com/user/auth/",
+			"time": 367,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				367
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "f16d87d0-1530-4b2a-86ec-1a54b03a5282",
+			"name": "Met_GET",
+			"url": "https://cajero-apig3m3e10.herokuapp.com/user/balance/1012369854",
+			"time": 85,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				85
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "348c369a-1e4a-446f-b3f7-b6d9b25b4d15",
+			"name": "Met_PUT",
+			"url": "https://cajero-apig3m3e10.herokuapp.com/user/transaction/",
+			"time": 83,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				83
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "a25079d2-e936-4b94-ac6c-da9deb7daf14",
+			"name": "Met_Get2",
+			"url": "https://cajero-apig3m3e10.herokuapp.com/user/balance/985536254",
+			"time": 87,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				87
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "faf735c0-f861-48d8-b3e4-00caffb44c8c",
+			"name": "Met_POST2",
+			"url": "https://cajero-apig3m3e10.herokuapp.com/user/auth/",
+			"time": 96,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				96
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "1db27e0b-39f6-4a6f-8c24-d675d45f5c3b",
+			"name": "Met_PUT2",
+			"url": "https://cajero-apig3m3e10.herokuapp.com/user/transaction/",
+			"time": 91,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				91
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 809,
+	"collection": {
+		"requests": [
+			{
+				"id": "ad491a3d-08d7-48bf-bb60-f76fc480ba1f",
+				"method": "POST"
+			},
+			{
+				"id": "f16d87d0-1530-4b2a-86ec-1a54b03a5282",
+				"method": "GET"
+			},
+			{
+				"id": "348c369a-1e4a-446f-b3f7-b6d9b25b4d15",
+				"method": "PUT"
+			},
+			{
+				"id": "a25079d2-e936-4b94-ac6c-da9deb7daf14",
+				"method": "GET"
+			},
+			{
+				"id": "faf735c0-f861-48d8-b3e4-00caffb44c8c",
+				"method": "POST"
+			},
+			{
+				"id": "1db27e0b-39f6-4a6f-8c24-d675d45f5c3b",
+				"method": "PUT"
+			}
+		]
+	}
+}

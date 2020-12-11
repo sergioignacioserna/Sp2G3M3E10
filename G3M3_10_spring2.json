@@ -1,0 +1,176 @@
+{
+	"info": {
+		"_postman_id": "d98ed416-b9bc-4468-a4fc-884499a178b2",
+		"name": "collAppG3M3E10",
+		"description": "# GESTIÓN DE CLIENTES Y PRODUCTOS\r\n## APLICACIÓN PARA TODOS LOS EMPLEADOS DE LA COMPAÑÍA\r\nEste módulo gestiona los usuarios de la aplicación, esto es, los empleados de la compañía. Tiene tres módulos:\r\nIngreso -- se requiere ID del empleado y contraseña.\r\nRegistro -- se debe ingresar ID del empleado, nombre, apellido, correo electrónico, cargo, nivel de acceso y contraseña.\r\nRecuperación de contraseña -- se debe ingresar el ID del empleado y este devolverá la contraseña y el correo electrónico al cual se debe enviar.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Met_POST",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "ID_empleado",
+						"value": "1018369421",
+						"type": "text"
+					},
+					{
+						"key": "Password",
+						"value": "MyPassMM1",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \"ID_empleado\":\"1018369421\",\r\n    \"Password\":\"MyPassMM1\"\r\n}"
+				},
+				"url": {
+					"raw": "https://cajero-apig3m3e10.herokuapp.com/user/auth/",
+					"protocol": "https",
+					"host": [
+						"cajero-apig3m3e10",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"user",
+						"auth",
+						""
+					]
+				},
+				"description": "# Para autenticación.\r\n### Datos correctos"
+			},
+			"response": []
+		},
+		{
+			"name": "Met_GET",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://cajero-apig3m3e10.herokuapp.com/user/balance/1012369854",
+					"protocol": "https",
+					"host": [
+						"cajero-apig3m3e10",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"user",
+						"balance",
+						"1012369854"
+					]
+				},
+				"description": "# Para recuperar contraseña vía correo electrónico\r\n### El usuario existe en la base de datos"
+			},
+			"response": []
+		},
+		{
+			"name": "Met_PUT",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{                           \"ID_empleado\":\"98553427\",\r\n                            \"Nombre\":\"Sergio\",\r\n                            \"Apellido\":\"Serna\",\r\n                            \"Correo_electronico\":\"se.se@myfact.com\",\r\n                            \"Cargo\":\"Profesor\",\r\n                            \"Nivel_de_acceso\":3,\r\n                            \"Password\":\"MyPassSS7\"\r\n}"
+				},
+				"url": {
+					"raw": "https://cajero-apig3m3e10.herokuapp.com/user/transaction/",
+					"protocol": "https",
+					"host": [
+						"cajero-apig3m3e10",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"user",
+						"transaction",
+						""
+					]
+				},
+				"description": "# Para registrar nuevo usuario de la aplicación\r\n### Usuario NO existe"
+			},
+			"response": []
+		},
+		{
+			"name": "Met_Get2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://cajero-apig3m3e10.herokuapp.com/user/balance/985536254",
+					"protocol": "https",
+					"host": [
+						"cajero-apig3m3e10",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"user",
+						"balance",
+						"985536254"
+					]
+				},
+				"description": "# Para recuperar contraseña vía correo electrónico\r\n### El usuario no existe en la base de datos"
+			},
+			"response": []
+		},
+		{
+			"name": "Met_POST2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \"ID_empleado\":\"1018369421\",\r\n    \"Password\":\"MyPassMM5\"\r\n}"
+				},
+				"url": {
+					"raw": "https://cajero-apig3m3e10.herokuapp.com/user/auth/",
+					"protocol": "https",
+					"host": [
+						"cajero-apig3m3e10",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"user",
+						"auth",
+						""
+					]
+				},
+				"description": "# Para autenticación\r\n### Datos incorrectos"
+			},
+			"response": []
+		},
+		{
+			"name": "Met_PUT2",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{                           \"ID_empleado\":\"98269478\",\r\n                            \"Nombre\":\"Sergio\",\r\n                            \"Apellido\":\"Serna\",\r\n                            \"Correo_electronico\":\"se.se@myfact.com\",\r\n                            \"Cargo\":\"Profesor\",\r\n                            \"Nivel_de_acceso\":3,\r\n                            \"Password\":\"MyPassSS7\"\r\n}"
+				},
+				"url": {
+					"raw": "https://cajero-apig3m3e10.herokuapp.com/user/transaction/",
+					"protocol": "https",
+					"host": [
+						"cajero-apig3m3e10",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"user",
+						"transaction",
+						""
+					]
+				},
+				"description": "# Para registrar un nuevo usuario\r\n### LOs datos son incorrectos, el usuario ya existe."
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
